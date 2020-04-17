@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Kisajja &amp; Kikulu Savings</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Datable -->
+    <link href="datatables/css/dataTables.bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ##### Preloader ##### -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="top-header-content h-100 d-flex align-items-center justify-content-between">
+                            <!-- Top Headline -->
+                            <div class="top-headline">
+                                <p style="font-size: 200%">Welcome to <span>Kisajja Kikulu</span></p>
+                            </div>
+                            <!-- Top Login & Faq & Earn Monery btn -->
+                            <div class="login-faq-earn-money">
+                                <p><a href="#">Login </a>| <a href="#"> Register</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="cryptos-main-menu" style=" background-color: #ced4da">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="cryptosNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html" style="margin-left: -8%"><img src="img/bg-img/ucc.jpg" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">Members</a>
+                                        <ul class="dropdown">
+                                            <li><a href="add_member.html">Add</a></li>
+                                            <li><a href="members_list.html">View List</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Attendance</a>
+                                        <ul class="dropdown">
+                                            <li><a href="make_attendancy.html">Record</a></li>
+                                            <li><a href="view_attendancy.html">History</a></li>
+                                            
+                                        </ul>
+                                    </li>
+
+                                     <li><a href="#" class="active">Savings</a>
+                                         <ul class="dropdown">
+                                            <li><a href="make_saving.html">Make Saving</a></li>
+                                            <li><a href="savings_list.html">List Of Savings</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="social_fund.html">Social Fund</a></li>
+                                    <li><a href="#">Loan</a>
+                                        <ul class="dropdown">
+                                            <li><a href="loan_application.html">Give Loan</a></li>
+                                            <li><a href="pay_loan.html">Pay Loan</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+      <div class="container">  
+            <h3>Record Members' Saving</h3><br> 
+            <form action="#" method="POST"> 
+                <div class="row">
+                    <div class="col-lg-4 form-group">
+                        <label for="cycle">Cycle:</label>
+                        <input type="text" class="form-control" placeholder="dropdown from db" id="cycle" value="" required="*" >
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date" required="*" >
+                    </div>
+                </div>  
+                <hr>          
+                <table id="data-table" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                    <thead>
+                      <tr style="font-weight: bolder;">
+                        <td>Name</td>
+                        <td>Amount</td>
+                        <td>Total Savings</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>List of names from db</td>
+                          <td><input type="number" placeholder="Shs." class="form-control" id="amount" value="amount"></td>
+                          <td> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit" class="btn btn-primary" >Submit</button>
+            </form>
+        </div>
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area section-padding-100-0 bg-img bg-overlay" style="background-image: url(img/bg-img/bg-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <h6>Quick Links</h6>
+                            </div>
+                            <nav>
+                                <ul class="useful-links d-flex justify-content-between flex-wrap">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Savings</a></li>
+                                    <li><a href="#">Users</a></li>
+                                    <li><a href="#">Social Fund</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12">
+                        <p>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This System is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Herbert</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+       
+    <!-- Datatables -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <script type="text/javascript">$(document).ready(function () 
+      {
+        $('#data-table').DataTable(
+        {
+          dom: 'Bfrtip',
+          iDisplayLength: 15,
+            buttons: [
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5',
+                    'pdfHtml5',
+                    'print',
+                    'pageLength',
+                    
+                    ],
+          search: true,
+          responsive: true
+          }
+          );
+        }
+        );
+    </script>
+</body>
+
+</html>

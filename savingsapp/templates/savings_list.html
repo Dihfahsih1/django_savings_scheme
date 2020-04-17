@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Kisajja &amp; Kikulu Savings</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- ##### Preloader ##### -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+     <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="top-header-content h-100 d-flex align-items-center justify-content-between">
+                            <!-- Top Headline -->
+                            <div class="top-headline">
+                                <p style="font-size: 200%">Welcome to <span>Kisajja Kikulu</span></p>
+                            </div>
+                            <!-- Top Login & Faq & Earn Monery btn -->
+                            <div class="login-faq-earn-money">
+                                <p><a href="#">Login </a>| <a href="#"> Register</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="cryptos-main-menu" style=" background-color: #ced4da">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="cryptosNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html" style="margin-left: -8%"><img src="img/bg-img/ucc.jpg" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">Members</a>
+                                        <ul class="dropdown">
+                                            <li><a href="add_member.html">Add</a></li>
+                                            <li><a href="members_list.html">View List</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Attendance</a>
+                                        <ul class="dropdown">
+                                            <li><a href="make_attendancy.html">Record</a></li>
+                                            <li><a href="view_attendancy.html">History</a></li>
+                                            
+                                        </ul>
+                                    </li>
+
+                                     <li><a href="#" class="active">Savings</a>
+                                         <ul class="dropdown">
+                                            <li><a href="make_saving.html">Make Saving</a></li>
+                                            <li><a href="savings_list.html">List Of Savings</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="social_fund.html">Social Fund</a></li>
+
+                                    <li><a href="#">Loan</a>
+                                        <ul class="dropdown">
+                                            <li><a href="loan_application.html">Give Loan</a></li>
+                                            <li><a href="pay_loan.html">Pay Loan</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <p><a href="index.html">Home</a> / Savings</p>
+        <h3>List of Members Savings</h3>
+        <div class="row">
+            <div class="col-lg-8" style=" display: inline-block; padding: 20px; margin:20px" >
+                <button class="btn btn-default" data-toggle="modal" data-target="#date" style="padding: 30px; margin-left:20px">Date</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#range" style="padding: 30px; margin-left:20px">Date Range</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#month" style="padding: 30px; margin-left:20px">Month</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#years" style="padding: 30px; margin-left:20px">Year</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#cycle" style="padding: 30px; margin-left:20px">Cycle</button>
+            </div>
+                  <!-- Button trigger modal -->
+          
+          <!-- date Modal -->
+          <div class="modal fade" id="date" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Kisajja Kikulu Savings</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="text-danger"><b>Saving List Sorted by Date</b></h4>
+                 <form method="POST" action="">
+                   <div class="col-lg-6 form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date" required="*" >
+                    </div> 
+                    <div class="row">
+                    <button type="submit" class="btn btn-primary" >Submit</button>
+                    <pre>                                   </pre><button type="button" class="btn btn-danger" data-dismiss="modal">NO</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+             <!-- date range Modal -->
+          <div class="modal fade" id="range" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Kisajja Kikulu Savings</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="text-danger"><b>Saving List Sorted by Date Range </b></h4>
+                 <form method="POST" action="">
+                   <div class="row">
+                   <div class="col-lg-6 form-group">
+                        <label for="date"> From Date:</label>
+                        <input type="date" class="form-control" id="from_date" name="from_date" required="*" >
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <label for="date"> To Date:</label>
+                        <input type="date" class="form-control" id="to_date" name="to_date" required="*" >
+                    </div>
+                    </div> 
+                    <div class="row">
+                    <button type="submit" class="btn btn-primary" >Submit</button>
+                    <pre>                                   </pre><button type="button" class="btn btn-danger" data-dismiss="modal">NO</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+             <!-- Month Modal -->
+          <div class="modal fade" id="month" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Kisajja Kikulu Savings</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="text-danger"><b>Saving List Sorted by Month</b></h4>
+                     <form method="POST" action="">
+                       <div class="row"> 
+                           <div class="col-lg-6 form-group">
+                                <label for="year">Year:</label>
+                                <input type="number" placeholder="year e.g. 2020" class="form-control" id="year" name="year"  required="*" >
+                            </div> 
+
+                            <div class="col-lg-6 form-group">
+                                <label for="date">Month:</label>
+                                   <select  name="report_month" class="form-control"required="required" style="cursor: pointer">
+                                      <option></option>
+                                      <option class="btn-success" name="1" value="1">January</option>
+                                      <option class="btn-success" name="2" value="2">February</option>
+                                      <option class="btn-success" name="3" value="3">March</option>
+                                      <option class="btn-success" name="4" value="4">April</option>
+                                      <option class="btn-success" name="5" value="5">May</option>
+                                      <option class="btn-success" name="6" value="6">June</option>
+                                      <option class="btn-success" name="7" value="7">July</option>
+                                      <option class="btn-success" name="8" value="8">August</option>
+                                      <option class="btn-success" name="9" value="9">September</option>
+                                      <option class="btn-success" name="10" value="10">October</option>
+                                      <option class="btn-success" name="11" value="11">November</option>
+                                      <option class="btn-success" name="12" value="12">December</option>
+                                    </select>
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-primary" >Submit</button>
+                            <pre>                                   </pre><button type="button" class="btn btn-danger" data-dismiss="modal">NO</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+             <!-- Year Modal -->
+          <div class="modal fade" id="years" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Kisajja Kikulu Savings</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="text-danger"><b>Saving List Sorted by Year</b></h4>
+                 <form method="POST" action="">
+                   <div class="col-lg-6 form-group">
+                        <label for="yearly">Year:</label>
+                        <input type="number" class="form-control" id="yearly" required="*" placeholder="Enter Year e.g. 2020" >
+                    </div> 
+                    <div class="row">
+                    <button type="submit" class="btn btn-primary" >Submit</button>
+                    <pre>                                   </pre><button type="button" class="btn btn-danger" data-dismiss="modal">NO</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+                 <!-- Cycle Modal -->
+          <div class="modal fade" id="cycle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Kisajja Kikulu Savings</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="text-danger"><b>Saving List Sorted by Cycle</b></h4>
+                 <form method="POST" action="">
+                   <div class="col-lg-6 form-group">
+                        <label for="cycles">Cycle:</label>
+                        <input type="text" class="form-control" id="cycles" name ="cycle" required="*" >
+                    </div> 
+                    <div class="row">
+                    <button type="submit" class="btn btn-primary" >Submit</button>
+                    <pre>                                   </pre><button type="button" class="btn btn-danger" data-dismiss="modal">NO</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+           
+            
+        </div>
+        
+    </div>
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area section-padding-100-0 bg-img bg-overlay" style="background-image: url(img/bg-img/bg-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <h6>Quick Links</h6>
+                            </div>
+                            <nav>
+                                <ul class="useful-links d-flex justify-content-between flex-wrap">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Savings</a></li>
+                                    <li><a href="#">Users</a></li>
+                                    <li><a href="#">Social Fund</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12">
+                        <p>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This System is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Herbert</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
